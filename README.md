@@ -1,0 +1,2 @@
+# inventory
+Kazist Inventory
