@@ -1,0 +1,13 @@
+{
+    "name": "products",
+    "title": "Transit Products",
+    "explanation": "  Transit Products",
+    "description": "  Transit Products",
+    "version": 4,
+    "has_view": "0",
+    "tie_field": "0",
+    "email_on_new": "0",
+    "email_on_edit": "0",
+    "email_on_delete": "0",
+    "date_file_modified": "2017-07-24 18:10:03"
+}

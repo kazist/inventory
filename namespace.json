@@ -1,0 +1,26 @@
+{
+    "InventoryTransfers": {
+        "namespace": "Inventory\\Transfers",
+        "controller": "TransfersController"
+    },
+    "InventoryStores": {
+        "namespace": "Inventory\\Stores",
+        "controller": "StoresController"
+    },
+    "InventoryTransit": {
+        "namespace": "Inventory\\Transit",
+        "controller": "TransitController"
+    },
+    "InventoryProducts": {
+        "namespace": "Inventory\\Products",
+        "controller": "ProductsController"
+    },
+    "InventoryTransitProducts": {
+        "namespace": "Inventory\\Transit\\Products",
+        "controller": "ProductsController"
+    },
+    "InventoryTransfersProducts": {
+        "namespace": "Inventory\\Transfers\\Products",
+        "controller": "ProductsController"
+    }
+}

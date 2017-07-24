@@ -1,0 +1,34 @@
+{
+    "title": "Inventory",
+    "description": "Inventory",
+    "alias": "inventory",
+    "icon": "fa fa-shopping-bag",
+    "home_link": "inventory\/stores",
+    "path": "applications/Inventory",
+    "is_core": "1",
+    "menulist": [{
+            "title": "Stores",
+            "alias": "admin_inventory_stores",
+            "url": "admin/inventory/stores",
+            "icon": "fa fa-building",
+            "children": []
+        }, {
+            "title": "Products",
+            "alias": "admin_products",
+            "url": "admin/products",
+            "icon": "fa fa-shopping-cart",
+            "children": []
+        }, {
+            "title": "Transfers",
+            "alias": "admin_transfers",
+            "url": "admin/transfers",
+            "icon": "fa fa-send",
+            "children": []
+        }, {
+            "title": "Transit",
+            "alias": "admin_transit",
+            "url": "admin/transit",
+            "icon": "fa fa-truck",
+            "children": []
+        }]
+}
