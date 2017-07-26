@@ -1,0 +1,125 @@
+{
+    "backend": [{
+            "title": "General Tasks",
+            "description": "General Tasks.",
+            "controller": "Inventory\\Transit\\Code\\Controllers\\Admin\\TransitController::taskAction",
+            "unique_name": "admin.inventory.transit.task",
+            "route": "admin/inventory/transit/task",
+            "permissions": "can_write",
+            "arguments": "",
+            "keywords": "transit, task",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_write"],
+                "ADMIN": ["can_write"]
+            }
+        }, {
+            "title": "Transit List",
+            "description": "Management of Transit.",
+            "controller": "Inventory\\Transit\\Code\\Controllers\\Admin\\TransitController::indexAction",
+            "permissions": "can_view, can_viewown",
+            "unique_name": "admin.inventory.transit",
+            "route": "admin/inventory/transit",
+            "arguments": "",
+            "keywords": "transit, list",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Add Transit  ",
+            "description": "Add Transit .",
+            "controller": "Inventory\\Transit\\Code\\Controllers\\Admin\\TransitController::addAction",
+            "unique_name": "admin.inventory.transit.add",
+            "route": "admin/inventory/transit/add",
+            "permissions": "can_add",
+            "arguments": {},
+            "keywords": "transit, add",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add"],
+                "ADMIN": ["can_add"]
+            }
+        }, {
+            "title": "Edit Transit {{ item.name }}",
+            "description": "Edit Transit {{ item.name }}.",
+            "controller": "Inventory\\Transit\\Code\\Controllers\\Admin\\TransitController::editAction",
+            "unique_name": "admin.inventory.transit.edit",
+            "route": "admin/inventory/transit/edit/{id}",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "transit, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }, {
+            "title": "Transit Detail: {{ item.name }}",
+            "description": "Transit Detail: {{ item.name }}",
+            "controller": "Inventory\\Transit\\Code\\Controllers\\Admin\\TransitController::detailAction",
+            "unique_name": "admin.inventory.transit.detail",
+            "route": "admin/inventory/transit/detail/{id}",
+            "permissions": "can_view, can_viewown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "transit, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"],
+                "MODERATOR": ["can_view", "can_viewown"],
+                "USER": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Transit Delete: {{ item.name }}",
+            "description": "Transit Delete: {{ item.name }}",
+            "controller": "Inventory\\Transit\\Code\\Controllers\\Admin\\TransitController::deleteAction",
+            "unique_name": "admin.inventory.transit.delete",
+            "route": "admin/inventory/transit/delete/{id}",
+            "permissions": "can_delete, can_deleteown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "transit, delete, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_delete", "can_deleteown"],
+                "ADMIN": ["can_delete", "can_deleteown"]
+            }
+        }, {
+            "title": "Transit Save: {{ item.name }}",
+            "description": "Transit Save: {{ item.name }}",
+            "controller": "Inventory\\Transit\\Code\\Controllers\\Admin\\TransitController::saveAction",
+            "unique_name": "admin.inventory.transit.save",
+            "route": "admin/inventory/transit/save",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "transit, save, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }]
+} 	

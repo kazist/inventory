@@ -1,0 +1,125 @@
+{
+    "backend": [{
+            "title": "General Tasks",
+            "description": "General Tasks.",
+            "controller": "Inventory\\Stores\\Code\\Controllers\\Admin\\StoresController::taskAction",
+            "unique_name": "admin.inventory.stores.task",
+            "route": "admin/inventory/stores/task",
+            "permissions": "can_write",
+            "arguments": "",
+            "keywords": "stores, task",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_write"],
+                "ADMIN": ["can_write"]
+            }
+        }, {
+            "title": "Store List",
+            "description": "Management of Stores.",
+            "controller": "Inventory\\Stores\\Code\\Controllers\\Admin\\StoresController::indexAction",
+            "permissions": "can_view, can_viewown",
+            "unique_name": "admin.inventory.stores",
+            "route": "admin/inventory/stores",
+            "arguments": "",
+            "keywords": "store, list",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Add Store  ",
+            "description": "Add Store .",
+            "controller": "Inventory\\Stores\\Code\\Controllers\\Admin\\StoresController::addAction",
+            "unique_name": "admin.inventory.stores.add",
+            "route": "admin/inventory/stores/add",
+            "permissions": "can_add",
+            "arguments": {},
+            "keywords": "store, add",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add"],
+                "ADMIN": ["can_add"]
+            }
+        }, {
+            "title": "Edit Store {{ item.name }}",
+            "description": "Edit Store {{ item.name }}.",
+            "controller": "Inventory\\Stores\\Code\\Controllers\\Admin\\StoresController::editAction",
+            "unique_name": "admin.inventory.stores.edit",
+            "route": "admin/inventory/stores/edit/{id}",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "store, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }, {
+            "title": "Store Detail: {{ item.name }}",
+            "description": "Store Detail: {{ item.name }}",
+            "controller": "Inventory\\Stores\\Code\\Controllers\\Admin\\StoresController::detailAction",
+            "unique_name": "admin.inventory.stores.detail",
+            "route": "admin/inventory/stores/detail/{id}",
+            "permissions": "can_view, can_viewown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "store, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"],
+                "MODERATOR": ["can_view", "can_viewown"],
+                "USER": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Store Delete: {{ item.name }}",
+            "description": "Store Delete: {{ item.name }}",
+            "controller": "Inventory\\Stores\\Code\\Controllers\\Admin\\StoresController::deleteAction",
+            "unique_name": "admin.inventory.stores.delete",
+            "route": "admin/inventory/stores/delete/{id}",
+            "permissions": "can_delete, can_deleteown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "store, delete, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_delete", "can_deleteown"],
+                "ADMIN": ["can_delete", "can_deleteown"]
+            }
+        }, {
+            "title": "Store Save: {{ item.name }}",
+            "description": "Store Save: {{ item.name }}",
+            "controller": "Inventory\\Stores\\Code\\Controllers\\Admin\\StoresController::saveAction",
+            "unique_name": "admin.inventory.stores.save",
+            "route": "admin/inventory/stores/save",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "store, save, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }]
+} 	
